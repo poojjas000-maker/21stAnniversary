@@ -1,0 +1,6 @@
+{
+  "name": "Chinnu's 21st Anniversary Surprise for Kunja & Chittapan",
+  "description": "A magical, interactive wedding anniversary surprise website celebrating 21 years of love and friendship for Kunja & Chittapan, lovingly crafted by Chinnu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

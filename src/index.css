@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-handwriting {
+    font-family: 'Caveat', cursive, sans-serif;
+  }
+  .font-romantic {
+    font-family: 'Dancing Script', cursive, sans-serif;
+  }
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-sans {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Scrapbook & Paper Texture styling */
+.paper-texture {
+  background-color: #FFFDF9;
+  background-image: 
+    radial-gradient(#e5dfd5 0.75px, transparent 0.75px),
+    radial-gradient(#e5dfd5 0.75px, #FFFDF9 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.scrapbook-card {
+  box-shadow: 0 4px 20px -2px rgba(61, 44, 41, 0.08), 0 2px 6px -1px rgba(61, 44, 41, 0.04);
+}
+
+.polaroid-shadow {
+  box-shadow: 0 8px 30px rgba(61, 44, 41, 0.12), 0 2px 8px rgba(61, 44, 41, 0.06);
+}
+
+/* Custom Watercolor Canvas and Filter effect */
+.watercolor-effect {
+  filter: contrast(105%) brightness(102%) saturate(110%);
+  position: relative;
+}
+
+.watercolor-canvas-blend {
+  mix-blend-mode: multiply;
+}
+
+/* Subtle Washi Tape effect */
+.washi-tape {
+  background: rgba(244, 194, 194, 0.75);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(1px);
+}
+
+/* Print styling for Grand Finale keepsake card */
+@media print {
+  body {
+    background: #FFFDF9 !important;
+    color: #3D2C29 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .anniversary-card-print {
+    box-shadow: none !important;
+    border: 2px solid #E2959E !important;
+    page-break-inside: avoid;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+}
